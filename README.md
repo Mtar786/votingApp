@@ -16,44 +16,15 @@ Vote on a poll (one vote per user per poll).
 
 Real-time Results: After voting, users can immediately see updated vote counts and percentages for each option.
 
-Project Structure
-bash
-Copy
-Edit
-voting-app/
-├── backend/
-│   ├── models/        # Mongoose models (User and Poll)
-│   ├── routes/        # API route definitions for auth and polls
-│   ├── package.json   # Backend dependencies and scripts
-│   └── server.js      # Express server setup
-└── frontend/
-    ├── src/
-    │   ├── components/ # React components (Login, Register, PollsList, etc.)
-    │   ├── App.js       # Main React app with routing
-    │   ├── api.js       # Axios instance with JWT handling
-    │   └── index.js     # React entry point
-    └── package.json     # Frontend dependencies and scripts
-Prerequisites
-Node.js (v16 or later recommended)
-
-npm or yarn
-
-MongoDB running locally or accessible via connection string
-
 Getting Started
 Clone the repository (or extract the provided archive) and navigate to the project root:
 
-bash
-Copy
-Edit
+
 cd voting-app
 Backend Setup
 
 Go into the backend directory and install dependencies:
 
-bash
-Copy
-Edit
 cd backend
 npm install
 (Optional) Configure environment variables by creating a .env file in the backend folder. You can override the defaults for MONGODB_URI, JWT_SECRET, and PORT.
@@ -61,16 +32,11 @@ npm install
 Example .env:
 
 env
-Copy
-Edit
 MONGODB_URI=mongodb://localhost:27017/votingApp
 JWT_SECRET=your_custom_jwt_secret
 PORT=5000
 Start the backend server:
 
-bash
-Copy
-Edit
 npm start
 The API will run on http://localhost:5000 by default.
 
@@ -78,16 +44,10 @@ Frontend Setup
 
 Open a new terminal, go into the frontend directory, and install dependencies:
 
-bash
-Copy
-Edit
 cd ../frontend
 npm install
 Start the React development server:
 
-bash
-Copy
-Edit
 npm start
 The frontend will run on http://localhost:3000 and proxy API requests to the backend (configured via the proxy field in frontend/package.json).
 
