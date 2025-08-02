@@ -1,4 +1,5 @@
-Voting App (MERN Stack)
+## Voting App (MERN Stack)
+
 This project is a simple voting application built with the MERN stack (MongoDB, Express.js, React.js, and Node.js). It allows users to register, log in, create polls, view existing polls, vote on poll options, and see voting results in real time.
 
 Features
