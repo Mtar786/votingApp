@@ -58,6 +58,7 @@ Open http://localhost:3000 in your browser.
 
 Register a new user account or log in if you already have one.
 
+
 Create polls, vote on them, and view results!
 
 API Endpoints Overview
